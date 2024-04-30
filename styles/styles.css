@@ -1,0 +1,342 @@
+body {
+  font-family: Helvica, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.split-screen,
+.side,
+.content-wrap {
+  width: 100vw;
+  height: 100vh;
+  min-height: 30em;
+  margin: 0 auto;
+}
+
+.split-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.side {
+  position: absolute;
+  overflow: hidden;
+}
+
+.content-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em;
+}
+
+.side .title {
+  z-index: 1;
+  margin: 3rem 3rem 0 2rem;
+}
+
+.side .title2 {
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  margin: 3rem 2rem 0.3rem 3rem;
+}
+
+.side .content-wrap .info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.car-icon-container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.car-icon {
+  width: 55%;
+  margin-top: 5rem;
+}
+
+.car-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.side .bg-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.side::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.right {
+  z-index: 1;
+  color: #ffffff;
+}
+
+.border1 {
+  border-right: 2px solid #333333;
+}
+
+.border2 {
+  border-right: 2px solid #ffffff;
+}
+
+.left {
+  z-index: 2;
+  color: 333333;
+  width: 50vw;
+  border-right: 8px #fff solid;
+}
+
+.side .info {
+  z-index: 1;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.side .info span {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.side .info p {
+  padding: 0 2rem;
+  font-size: 1.9em;
+  line-height: 1.4em;
+}
+
+h5 {
+  font-size: 0.9em;
+  font-weight: 100;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 840px) {
+  .split-screen,
+  .side,
+  .content-wrap {
+    width: 100vw;
+    min-height: 5em;
+    margin: 0 auto;
+  }
+
+  .left {
+    width: 50%;
+  }
+  .car-icon {
+    width: 50%;
+    margin-top: 1%;
+  }
+
+  .side .title {
+    width: 40%;
+    z-index: 1;
+    margin: 3rem 3rem 0 2rem;
+  }
+
+  .title img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .side .title2 {
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    margin: 3.66rem 0 0.1rem auto;
+  }
+
+  .title2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .side .info span {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  .side .info p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  h5 {
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-top: 0.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    width: 50%;
+  }
+  .car-icon {
+    width: 70%;
+    margin-top: 15%;
+  }
+
+  .side .title {
+    width: 40%;
+    z-index: 1;
+    margin: 3rem 3rem 0 2rem;
+  }
+
+  .title img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .side .title2 {
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    margin: 3.5rem 0 0.1rem auto;
+  }
+
+  .title2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .split-screen,
+  .side,
+  .content-wrap {
+    width: 100vw;
+    height: 80vh;
+    min-height: 30em;
+    margin: 0 auto;
+  }
+
+  .side .info span {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .side .info p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  h5 {
+    font-size: 0.5em;
+    font-weight: 100;
+    margin-top: 0.1rem;
+  }
+}
+
+@media (max-width: 474px) {
+  section {
+    margin: 8rem 0;
+  }
+
+  .content-wrap {
+    padding: 2.5em 0.5em;
+  }
+
+  .side .title {
+    width: 40%;
+    z-index: 1;
+    margin: 2rem 0 0 1rem;
+  }
+
+  .side .title2 {
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    margin: 2.4rem 0 0.1rem auto;
+  }
+
+  .car-icon {
+    width: 100%;
+    margin-top: 40%;
+  }
+
+  .side .info span {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .side .info p {
+    font-size: 0.6rem;
+    line-height: 1em;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 0.5rem;
+    font-weight: 100;
+    margin-top: 0.1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  section {
+    margin: 8rem 0;
+  }
+
+  .content-wrap {
+    padding: 2.5em 0.5em;
+  }
+
+  .side .title {
+    width: 40%;
+    z-index: 1;
+    margin: 2rem 0 0 1rem;
+  }
+
+  .side .title2 {
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    margin: 2.4rem 0 0.1rem auto;
+  }
+
+  .car-icon {
+    width: 100%;
+    margin-top: 45%;
+  }
+
+  .side .info span {
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .side .info p {
+    font-size: 0.5rem;
+    line-height: 1em;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 0.4rem;
+    font-weight: 100;
+    margin-top: 0.1rem;
+  }
+}
