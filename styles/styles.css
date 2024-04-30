@@ -132,12 +132,11 @@ h5 {
   margin-top: 0.1rem;
 }
 
-@media (max-width: 840px) {
+@media (min-width: 769px) and (max-width: 900px) {
   .split-screen,
   .side,
   .content-wrap {
     width: 100vw;
-    min-height: 5em;
     margin: 0 auto;
   }
 
@@ -152,7 +151,7 @@ h5 {
   .side .title {
     width: 40%;
     z-index: 1;
-    margin: 3rem 3rem 0 2rem;
+    margin: 1rem 3rem 0 2rem;
   }
 
   .title img {
@@ -165,7 +164,7 @@ h5 {
     z-index: 1;
     display: flex;
     justify-content: end;
-    margin: 3.66rem 0 0.1rem auto;
+    margin: 1.7rem 0 0.1rem auto;
   }
 
   .title2 img {
