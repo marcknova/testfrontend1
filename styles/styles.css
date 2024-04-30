@@ -117,7 +117,7 @@ body {
 
 .side .info span {
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .side .info p {
@@ -149,9 +149,9 @@ h5 {
   }
 
   .side .title {
-    width: 40%;
+    width: 20%;
     z-index: 1;
-    margin: 1rem 3rem 0 2rem;
+    margin: 0.5rem 3rem 0 2rem;
   }
 
   .title img {
@@ -160,11 +160,11 @@ h5 {
   }
 
   .side .title2 {
-    width: 40%;
+    width: 20%;
     z-index: 1;
     display: flex;
     justify-content: end;
-    margin: 1.7rem 0 0.1rem auto;
+    margin: 0.5rem 0 0.1rem auto;
   }
 
   .title2 img {
